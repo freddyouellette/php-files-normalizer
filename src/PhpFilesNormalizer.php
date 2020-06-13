@@ -2,9 +2,9 @@
 
 namespace freddyouellette\PhpFilesNormalizer;
 
-require_once __DIR__.'/PhpFilesArray_Interface.php';
+require_once __DIR__.'/PhpFilesNormalizer_Interface.php';
 
-class PhpFilesArray implements \freddyouellette\PhpFilesNormalizer\PhpFilesArray_Interface
+class PhpFilesNormalizer implements \freddyouellette\PhpFilesNormalizer\PhpFilesNormalizer_Interface
 {
 	public static function normalize(Array $php_files_array, Array $output = []) 
 	{

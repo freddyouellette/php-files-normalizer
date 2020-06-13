@@ -68,10 +68,10 @@ and in your php file:
 require_once __DIR__.'/vendor/autoload.php';
 
 // include the Normalizer namespace
-use \freddyouellette\PhpFilesNormalizer\PhpFilesArray;
+use \freddyouellette\PhpFilesNormalizer\PhpFilesNormalizer;
 
 // normalize the $_FILES array
-$files = PhpFilesArray::normalize($_FILES);
+$files = PhpFilesNormalizer::normalize($_FILES);
 ```
 
 # Contributing

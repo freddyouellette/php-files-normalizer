@@ -2,7 +2,7 @@
 
 namespace freddyouellette\PhpFilesNormalizer;
 
-interface PhpFilesArray_Interface
+interface PhpFilesNormalizer_Interface
 {
 	/**
 	 * Normalizes the php $_FILES array to a friendlier array, based on the names of the file inputs 

@@ -2,10 +2,10 @@
 
 ini_set('display_errors', true);
 
-require_once __DIR__.'/../src/PhpFilesArray.php';
+require_once __DIR__.'/../src/PhpFilesNormalizer.php';
 
 if($_FILES) {
-	$parsed = \freddyouellette\PhpFilesNormalizer\PhpFilesArray::normalize($_FILES);
+	$parsed = \freddyouellette\PhpFilesNormalizer\PhpFilesNormalizer::normalize($_FILES);
 	
 	echo '<pre>';
 	echo '//////////////////////////////////////////////////////////////////////////////'.PHP_EOL;
