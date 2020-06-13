@@ -1,0 +1,16 @@
+{
+	"name": "freddyouellette/php-files-normalizer",
+	"description": "Normalizes the PHP $_FILES array to a friendlier format.",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Frederick Ouellette",
+			"email": "freddy.ouellette@gmail.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {"freddyouellette\\PhpFilesNormalizer\\": "src/"}
+	}
+}
