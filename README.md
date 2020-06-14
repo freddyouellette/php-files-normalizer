@@ -74,5 +74,18 @@ use \freddyouellette\PhpFilesNormalizer\PhpFilesNormalizer;
 $files = PhpFilesNormalizer::normalize($_FILES);
 ```
 
+If you would rather merge the $_FILES array into an existing one, just pass the existing array as the second argument:
+```php
+$files = ['other-data' => 12345];
+$files = PhpFilesNormalizer::normalize($_FILES, $files);
+```
+This can be useful to normalize all data passed from the frontend to a single array. Then your backend controllers can be passed a single array of data instead of having a direct dependency between the *controller* and the *data type* it relies on.
+```php
+$data = array_merge($_POST, $_GET);
+$data = PhpFilesNormalizer::normalize($_FILES, $data);
+// some controller which accepts data as an argument
+$Controller->__invoke($data);
+```
+
 # Contributing
 I encourage all issues to be submitted through the [**Issues** tab on GitHub](https://github.com/freddyouellette/php-files-normalizer/issues). Pull requests are welcome.
